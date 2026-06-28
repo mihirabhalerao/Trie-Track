@@ -1,0 +1,23 @@
+package com.example.trietrack.model.enums;
+
+public enum Topic {
+    ARRAYS_AND_HASHING,
+    TWO_POINTERS,
+    SLIDING_WINDOW, 
+    STACK,
+    BINARY_SEARCH,
+    RECURSION,
+    LINKED_LIST,
+    TREES,
+    BINARY_SEARCH_TREES,
+    TRIE,
+    HEAP_PRIORITY_QUEUE,
+    BACKTRACKING,
+    GRAPHS,
+    ADVANCED_GRAPHS,
+    DYNAMIC_PROGRAMMING,
+    GREEDY,
+    INTERVALS,
+    MATH_AND_GEOMETRY,
+    BIT_MANIPULATION
+}
