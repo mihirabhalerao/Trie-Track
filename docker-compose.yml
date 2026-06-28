@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: trietrack-postgres
+    environment:
+      POSTGRES_DB: dsa_tracker
+      POSTGRES_USER: ${DB_USERNAME:-dsa_admin}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-dsa_secure_password}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: trietrack-redis
+    command: redis-server --requirepass ${REDIS_PASSWORD:-dsa_redis_password}
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
