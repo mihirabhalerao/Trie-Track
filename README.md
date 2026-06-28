@@ -27,7 +27,7 @@ Trie&Track is a full-stack DSA progress tracker that consolidates NeetCode 150 a
 
 ## Project Structure
 
-### Backend (`/backend`)
+### Backend (`/trietrack`)
 
 ```
 src/main/java/com/example/trietrack/
